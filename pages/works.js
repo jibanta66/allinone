@@ -13,6 +13,7 @@ import thumbStyly from '../public/images/works/styly_eyecatch.png'
 import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
 import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
 import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import { Box,Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 
 const Works = () => (
   <Layout title="Works">
@@ -20,6 +21,27 @@ const Works = () => (
       <Heading as="h3" fontSize={20} mb={4}>
         Works
       </Heading>
+      <Box>
+      <Tabs>
+  <TabList>
+    <Tab>jibonto</Tab>
+    <Tab>Two</Tab>
+    <Tab>Three</Tab>
+  </TabList>
+
+  <TabPanels>
+    <TabPanel>
+      <p>one!</p>
+    </TabPanel>
+    <TabPanel>
+      <p>two!</p>
+    </TabPanel>
+    <TabPanel>
+      <p>three!</p>
+    </TabPanel>
+  </TabPanels>
+</Tabs>
+      </Box>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
